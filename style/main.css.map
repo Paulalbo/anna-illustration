@@ -1,0 +1,24 @@
+{
+    "version": 3,
+    "mappings": "AEAA,OAAO,CAAC,oFAAI;AEAZ,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,EFDH,SAAS,EAAE,UAAU;EEE7B,WAAW,EDJC,OAAO;ECKnB,UAAU,EAAE,UAAU;CAAG;;AAE7B,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,MAAM;EAClB,QAAQ,EAAE,QAAQ;CAAG;;ACTvB,AAAA,SAAS,CAAC;EACN,KAAK,EFGK,OAAO;CEOD;;ACXpB,UAAU,CAAV,SAAU;EACN,EAAE;IACE,KAAK,EAAE,EAAE;IACT,IAAI,EAAE,CAAC;;EAEX,GAAG;IACC,KAAK,EAAE,IAAI;IACX,IAAI,EAAE,CAAC;;EAEX,IAAI;IACA,KAAK,EAAE,CAAC;IACR,IAAI,EAAE,IAAI;;;;ACXlB,AAAA,MAAM,CAAC;EACH,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,aAAa,EAAE,IAAI;CAEQ;;AAL/B,AAII,MAJE,CAIF,UAAU,CAAC;EACP,UAAU,EAAE,MAAM;CAAG;;ACJ7B,AAAA,MAAM,CAAC;EACL,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,KAAK;CAAG;;AMJtB,AAAA,KAAK,CAAC;EACF,WAAW,EZCH,SAAS,EAAE,UAAU;CYA/B",
+    "sources": [
+        "main.sass",
+        "base/__variables.sass",
+        "base/__fonts.sass",
+        "base/__colors.sass",
+        "base/__basics.sass",
+        "base/__content.sass",
+        "base/__mixins.sass",
+        "component/__footer.sass",
+        "component/__hero.sass",
+        "component/__navigation.sass",
+        "component/__accordion.sass",
+        "layout/__breakpoints.sass",
+        "layout/__frame.sass",
+        "layout/__grid.sass",
+        "layout/__layout.sass",
+        "layout/__section.sass"
+    ],
+    "names": [],
+    "file": "main.css"
+}
