@@ -13,8 +13,13 @@
         content: ""
         width: 2px
         height: 65px
-        background-color: $color-secondary
         position: absolute
         top: -50px
         left: 50%
         transform: translateX(-50%)
+    &--primary
+        &::after
+            background-color: $color-primary
+    &--secondary
+        &::after
+            background-color: $color-secondary

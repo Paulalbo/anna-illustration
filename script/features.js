@@ -1,5 +1,7 @@
 import {addComponent} from './features/component-loader.js';
 import {contentClasses} from './features/content-classes.js';
+import {observer} from './features/observer.js';
+
 
 
 async function features () {
@@ -11,6 +13,7 @@ async function features () {
     await addComponent("about-teaser", "section-about-teaser");
     await addComponent("footer", "footer");
     contentClasses();
+    observer(document.querySelector(".section-grid"));
 }
 
 
