@@ -1,1 +1,21 @@
-// currently not used, maybe there will be a navigation in the future
+.nav
+    position: sticky
+    top: 0
+    background: #fff
+    z-index: 999
+    &-container
+        justify-content: space-between
+        margin: 0 auto
+        padding: 20px
+        max-width: 1200px
+        display: flex
+        max-width: 1200px
+    &__item
+        color: $color-primary
+        text-decoration: unset
+        &:hover
+            color: $color-secondary
+        &--big
+            font-size: 20px
+            font-weight: 600
+            text-transform: uppercase

@@ -263,6 +263,42 @@ footer .paragraph {
   left: -200px;
 }
 
+.nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 999;
+}
+
+.nav-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+}
+
+.nav__item {
+  color: #006D75;
+  text-decoration: unset;
+}
+
+.nav__item:hover {
+  color: #CBA135;
+}
+
+.nav__item--big {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .main {
   font-family: "Quicksand", sans-serif;
 }
