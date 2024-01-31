@@ -6,8 +6,15 @@
     display: flex
     align-items: flex-start
     gap: 20px
+    @media screen and ( max-width:  750px)
+          flex-direction: column
+          gap: 10px
     .img
       &--narrow
         width: 30%
+        @media screen and ( max-width:  750px)
+          width: 100%
       &--wide
         width: 40%
+        @media screen and ( max-width:  750px)
+          width: 100%

@@ -6,8 +6,12 @@
     object-fit: cover
     &--narrow
       width: 30%
+      @media screen and ( max-width:  750px)
+        width: 100%
     &--wide
       width: 40%
+      @media screen and ( max-width:  750px)
+        width: 100%
 
   .show-more
     &::after

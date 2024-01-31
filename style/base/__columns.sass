@@ -1,5 +1,13 @@
 .columns
   display: flex
+  @media screen and ( max-width:  750px)
+    flex-direction: column
+  &--reverse-mobile
+    @media screen and ( max-width:  750px)
+          flex-direction: column-reverse
   &--2
     div
       width: 50%
+      @media screen and ( max-width:  750px)
+        width: 100%
+        max-width: 100%

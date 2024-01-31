@@ -22,6 +22,22 @@ paragraphs.forEach((paragraph) => {
     paragraph.classList.add("paragraph");
 });
 
+// img class 
+
+let imgs = document.querySelectorAll(".main img");
+
+imgs.forEach((img) => {
+    img.classList.add("img");
+});
+
+// svg class 
+
+let svgs = document.querySelectorAll(".main svg");
+
+svgs.forEach((svg) => {
+    svg.classList.add("svg");
+});
+
 // list class
 
 let unorderedListContainers = document.querySelectorAll(".main ul");

@@ -7,10 +7,14 @@
     z-index: 1
     &--narrow
       max-width: 390px
+      @media screen and ( max-width:  750px)
+        max-width: 100%
     &--wide
       max-width: 865px
       margin-top: -150px
       z-index: 0
+      @media screen and ( max-width:  750px)
+        margin-top: 0
     &--circle-detail
       position: relative
       &::after
