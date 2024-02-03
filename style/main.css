@@ -461,6 +461,62 @@ footer .paragraph {
   }
 }
 
+.section-about-teaser .section-active {
+  position: relative;
+}
+
+.section-about-teaser .section-active::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  width: 100vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-bottom: 2px solid #1e1e1e;
+  left: 0;
+  z-index: 9;
+}
+
+.section-about-teaser .project {
+  padding: 30px 20px;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  border-radius: 50px;
+  border: 1px solid black;
+  z-index: 10;
+  background-color: #fff;
+  position: relative;
+}
+
+.section-about-teaser .project img {
+  height: 0px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: 70px;
+  left: 0;
+  position: absolute;
+  -webkit-transition: 300ms ease-in;
+  transition: 300ms ease-in;
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+  border: 0;
+  border-radius: 25px 25px 0 0;
+}
+
+.section-about-teaser .project-active {
+  background: #1e1e1e;
+  color: #fff;
+  position: relative;
+  border-radius: 0 0 25px 25px;
+  border-color: #fff;
+}
+
+.section-about-teaser .project-active img {
+  height: 300px;
+  border: 20px solid #1e1e1e;
+}
+
 .section-grid .grid-img {
   width: 100%;
   height: 100%;

@@ -24,3 +24,42 @@
       margin-top: 150px
       @media screen and ( max-width:  750px)
           margin-top: 0
+    .section-active
+      position: relative
+      &::before
+        content: ""
+        position: fixed
+        top: 50%
+        width: 100vw
+        transform: translateY(-50%)
+        border-bottom: 2px solid #1e1e1e
+        left: 0
+        z-index: 9
+    .project
+      padding: 30px 20px
+      transition: 200ms ease-in-out
+      border-radius: 50px
+      border: 1px solid black
+      z-index: 10
+      background-color: #fff
+      position: relative
+      img
+        height: 0px
+        width: 100%
+        object-fit: cover
+        bottom: 70px
+        left: 0
+        position: absolute
+        transition: 300ms ease-in
+        transition-delay: 100ms
+        border: 0
+        border-radius: 25px 25px 0 0 
+      &-active
+        background: #1e1e1e
+        color: #fff
+        position: relative
+        border-radius: 0 0 25px 25px
+        border-color: #fff
+        img
+          height: 300px
+          border: 20px solid #1e1e1e
