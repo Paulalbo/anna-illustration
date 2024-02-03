@@ -29,3 +29,11 @@ await features();
     });
 
     
+    // nav toggle
+
+    let mobileMenu = document.querySelector(".menu-icon");
+    let mobileContainer = document.querySelector(".nav-mobile");
+    mobileMenu.addEventListener("click", () => {
+        mobileContainer.classList.toggle("nav-mobile-active");
+        document.querySelector("body").classList.toggle("body-mobile-modal")
+    })
