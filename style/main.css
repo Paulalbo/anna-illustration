@@ -590,7 +590,7 @@ footer .paragraph {
   display: flex;
   position: fixed;
   left: 0;
-  top: 0;
+  top: -200%;
   width: 100%;
   height: 0;
   background: #fff;
@@ -642,6 +642,7 @@ footer .paragraph {
 }
 
 .nav-mobile-active .nav-mobile-container {
+  top: 0;
   height: 100vh;
   opacity: 1;
 }
