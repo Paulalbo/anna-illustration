@@ -1,20 +1,77 @@
 .section-hero
+  @media screen and ( max-width:  750px)
+    margin-top: 50px
   .heading-content
     max-width: 390px
     width: 100%
     margin: 0 auto
   .columns__item--hero-img
     position: relative
-    &::after
-      content: ""
-      position: absolute
-      border: 2px solid #CBA135
+    .swiper
+      overflow: hidden
+      border: 3px solid #CBA135
       border-radius: 50%
-      width: 518px
-      height: 100%
-      top: 60px
-      left: 0
-      z-index: -1
+    .swiper-pagination
+      bottom: -30px
+      display: flex
+      justify-content: center
+      gap: 14px
       @media screen and ( max-width:  750px)
-        width: 100%
-
+        display: none
+      .swiper-pagination-bullet
+        display: block
+        width: 10px
+        height: 10px
+        &:nth-of-type(1)
+          margin-top: -5%
+          @media screen and ( max-width:  750px)
+            margin-top: -7.5%
+        &:nth-of-type(2)
+          margin-top: -2.5%
+          @media screen and ( max-width:  750px)
+            margin-top: -3.75%
+        &:nth-of-type(3)
+          margin-top: -0.625%
+          @media screen and ( max-width:  750px)
+            margin-top: -1.25%
+        &:nth-of-type(4)
+          margin-top: 0.25%
+        &:nth-of-type(5)
+          margin-top: 0.5%
+        &:nth-of-type(6)
+          margin-top: 0.25%
+        &:nth-of-type(7)
+          margin-top: -0.625%
+          @media screen and ( max-width:  750px)
+            margin-top: -1.25%
+        &:nth-of-type(8)
+          margin-top: -2.5%
+          @media screen and ( max-width:  750px)
+            margin-top: -3.75%
+        &:nth-of-type(9)
+          margin-top: -5%
+          @media screen and ( max-width:  750px)
+            margin-top: -7.5%
+        
+        &.swiper-pagination-bullet-active
+          background: #000
+          border: 1px solid #CBA135
+          
+    .swiper-button
+      position: absolute
+      width: auto
+      color: #CBA135
+      &::after
+        font-size: 30px
+      @media screen and ( max-width:  750px)
+        top: calc( 100% + 50px)
+        &::after
+          font-size: 20px
+      &-next
+        right: -35px
+        @media screen and ( max-width:  750px)
+          right: 35%
+      &-prev 
+        left: -35px
+        @media screen and ( max-width:  750px)
+          left: 35%
